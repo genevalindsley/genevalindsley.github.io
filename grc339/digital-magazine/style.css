@@ -1,0 +1,107 @@
+/*CSS document*/
+
+body{ 
+    background-color: #000000;
+    padding: 0em 1em;
+    background-image: url(background1.jpg);
+}
+
+div.container{
+    max-width: 40em;
+    margin: auto;
+}
+
+h2{ 
+    font-family: kaneda-gothic, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color:#EC551E;
+    font-size: 30pt;
+    line-height: 30pt; 
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    margin-bottom: .5em;
+}
+
+h3{ 
+    font-family: kaneda-gothic, sans-serif;
+    font-weight: 700;
+    font-style: normal; 
+    color:#EC551E;
+    font-size: 20pt;
+    line-height: 22pt; 
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    margin: 0em;
+    padding: 0em;
+}
+
+p{  
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color:#FFF0D9;
+    font-size: 10pt;
+    line-height: 14pt;
+}
+a{
+    color:#B4A5C1;
+    font-family: kaneda-gothic, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18pt;
+    line-height: 14pt;
+    text-decoration: none;
+}
+
+figcaption{ 
+    font-family: aktiv-grotesk-italic, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color:#F3D43A;
+    font-size: 8pt;
+    line-height: 12pt;
+}
+
+nav ul li { 
+    display: inline;  
+    margin: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .01em;
+}
+
+article{
+    padding-bottom: 3em;
+}
+
+a:hover{
+    color: #F3D43A;
+}
+
+a h3:hover{
+    color:#B4A5C1;
+}
+
+a p{
+    padding: 0.5em 0em 3.5em 0em;
+    margin: 0em;
+}
+
+figure {
+    margin: 0em 0em .3em 0em;
+}
+
+img {
+    width: 100%;
+}
+
+img.suggestion{
+    width: 50%;
+    padding: 0em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
