@@ -3,12 +3,17 @@
 body{ 
     background-color: #000000;
     padding: 0em 1em;
-    background-image: url(background1.jpg);
+    background-image: url(background.jpeg);
 }
 
 div.container{
-    max-width: 40em;
+    max-width: 62em;
     margin: auto;
+}
+
+main{
+    max-width: 45em;
+    align-content: center;
 }
 
 h2{ 
@@ -20,7 +25,7 @@ h2{
     line-height: 2.5rem; 
     text-transform: uppercase;
     letter-spacing: .03em;
-    margin-bottom: .5em;
+    margin: 0em 0em .1em;
 }
 
 h3{ 
@@ -36,21 +41,60 @@ h3{
     padding: 0em;
 }
 
+h3.preface{
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#EC551E;
+    font-size: .9rem;
+    line-height: 1.1rem;
+    margin-bottom: 0em;
+    text-transform: none;
+}
+
+h4{
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#FFF0D9;
+    font-size: .8rem;
+    margin: .2em 0em 2em;
+}
+
+h4.name{
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: .9rem;
+    margin: .5em 0em 0em;
+}
+
+h5{
+   font-family: kaneda-gothic, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.9rem;
+    margin: .85em 0em 0em;
+    text-transform: uppercase;
+    color:#FFF0D9;
+}
+
 p{  
     font-family: aktiv-grotesk, sans-serif;
     font-weight: 300;
     font-style: normal;
     color:#FFF0D9;
-    font-size: .82rem;
-    line-height: 1.1rem;
+    font-size: .85rem;
+    line-height: 1.3rem;
 }
+
+p.aftertitle{
+    margin-top: .2em;
+}
+
+
 a{
     color:#B4A5C1;
-    font-family: kaneda-gothic, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 1.4rem;
-    line-height: 1.2rem;
     text-decoration: none;
 }
 
@@ -65,14 +109,20 @@ figcaption{
 
 nav ul li { 
     display: inline;  
-    margin: 1em;
+    margin: .7em;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: .01em;
+    font-family: kaneda-gothic, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1.2rem;
 }
 
 article{
     padding-bottom: 3em;
+    max-width: 35em;
 }
 
 a:hover{
@@ -104,4 +154,59 @@ img.suggestion{
 ul {
     list-style-type: none;
     padding: 0;
+}
+
+@media screen and (min-width:60em){
+    
+    div.container{
+        display: grid;
+        grid-template-columns: 2.5fr 1fr;
+        grid-gap: 0em 2em;
+        margin: auto;
+    }
+    
+    header{
+        grid-column: 1/3;  
+    }
+    
+    main{
+        grid-column: 1/2;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 0 2em;
+    }
+    
+    article{
+        grid-column:  1/2;
+        max-width: 40em;
+    }
+    
+    nav ul li {
+        font-size: 2rem;
+        margin: 2.43em;
+    }
+    
+    p{
+        font-size: .95rem;
+        line-height: 1.5rem;
+    }
+ 
+    }
+    section.mainstory{
+        grid-column: 1/3;
+    }
+    
+   aside{
+        grid-column:2/3;
+       
+    }
+    
+    footer{
+        grid-column: 1/3;
+    }
+    
+    img.suggestion{
+        width: 100%;
+}
 }
