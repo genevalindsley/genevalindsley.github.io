@@ -7,6 +7,10 @@ body{
     
 }
 
+span{
+    text-transform: uppercase;
+}
+
 div.container{
     max-width: 62em;
     margin: auto;
